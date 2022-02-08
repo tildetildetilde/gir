@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.2">
+			<file name="source.xml" url="https://raw.githubusercontent.com/tildetildetilde/gir/main/source.xml />
+		</update>
+	</info>	
+	<element name="Humblewood" type="Source" source="Core" id="ID_TDOMT_HW">
+		<description>
+			<![CDATA[<p><strong>humblewood.</strong></p>
+		</description>
+		<setters>
+			<set name="abbreviation">HW</set>
+			<set name="url">https://hitpointpress.com/humblewood-campaign-setting-pdf</set>
+			<set name="image">https://cdn11.bigcommerce.com/s-21yq40vu94/images/stencil/600x600/products/451/1434/humblewoodPDF__90156.1615497971.png?c=1</set>
+			<set name="author" abbreviation="TDOMT" url="https://humblewood.com/">Humblewood</set>
+			<set name="official">false</set>
+			<set name="supplement">true</set>
+			<set name="release">20190924</set>
+		</setters>
+	</element>
+</elements>

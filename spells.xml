@@ -4,7 +4,7 @@
 		<name>Spells</name>
 		<description>spells from the humblewood animated card pack</description>
 		<update version="0.0.6">
-			<file name="spells.xml" url="https://drive.google.com/drive/my-drive" />
+			<file name="spells.xml" url="https://raw.githubusercontent.com/tildetildetilde/gir/main/spells.xml" />
 		</update>
 	</info>
 

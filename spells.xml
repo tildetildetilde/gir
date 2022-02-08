@@ -3,7 +3,6 @@
 	<info>
 		<name>Spells</name>
 		<description>spells from the humblewood animated card pack</description>
-		<author url="https://hitpointpress.com/humblewood-animated-spells-card-pack">The Deck of Many Things</author>
 		<update version="0.0.6">
 			<file name="spells.xml" url="https://drive.google.com/drive/my-drive" />
 		</update>

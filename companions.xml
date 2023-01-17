@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Companions</name>
+        <update version="0.0.2">
+            <file name="companions.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/companions.xml" />
+        </update>
+    </info>
+
+	<element name="Young Crystal Dragon" type="Companion" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTD_COMPANION_YOUNG_CRYSTAL_DRAGON">
+		<supports>Familiar, Variant Familiar</supports>
+		<description>
+			<p></p>
+        </description>
+		<setters>
+			<set name="strength">17</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">18</set>
+			<set name="intelligence">16</set>
+			<set name="wisdom">14</set>
+			<set name="charisma">17</set>
+			<set name="ac">15</set>
+			<set name="hp">95 (10d10+40)</set>
+			<set name="speed">40 ft., burrow 20 ft., climb 40 ft., fly 80 ft.</set>
+			<set name="languages">Common, Draconic, telepathy 120ft.</set>
+			<set name="skills">Perception +8, Stealth +7, Survival +5</set>
+			<set name="senses">blindsight 30 ft., darkvision 120 ft., passive Perception 18</set>
+			<set name="type">Dragon</set>
+			<set name="size">Large Dragon (Gem)</set>
+			<set name="alignment">chaotic neutral</set>
+			<set name="challenge">5</set>
+			<set name="actions">ID_WOTC_FTD_COMPANION_ACTION_YOUNG_CRYSTAL_DRAGON_MULTIATTACK,ID_WOTC_FTD_COMPANION_ACTION_YOUNG_CRYSTAL_DRAGON_BITE,ID_WOTC_FTD_COMPANION_ACTION_YOUNG_CRYSTAL_DRAGON_CLAW,ID_WOTC_FTD_COMPANION_ACTION_YOUNG_CRYSTAL_DRAGON_SCINTILLATING_BREATH,ID_WOTC_FTD_COMPANION_ACTION_YOUNG_CRYSTAL_DRAGON_SPELLCASTING</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="15" />
+			<stat name="companion:hp:max" value="95" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:speed:burrow" value="20" bonus="base" />
+			<stat name="companion:speed:climb" value="40" bonus="base" />
+			<stat name="companion:speed:fly" value="80" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:survival:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Multiattack" type="Companion Action" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTD_COMPANION_ACTION_YOUNG_CRYSTAL_DRAGON_MULTIATTACK">
+		<description>
+			<p>The dragon makes one Bite attack and two Claw attacks.</p>
+		</description>
+		<sheet>
+			<description>The dragon makes one Bite attack and two Claw attacks.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTD_COMPANION_ACTION_YOUNG_CRYSTAL_DRAGON_BITE">
+		<description>
+			<p>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (2d10 + 3) piercing damage plus 4 (1d8) radiant damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (2d10 + 3) piercing damage plus 4 (1d8) radiant damage.</description>
+		</sheet>
+	</element>
+	<element name="Claw" type="Companion Action" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTD_COMPANION_ACTION_YOUNG_CRYSTAL_DRAGON_CLAW">
+		<description>
+			<p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.</description>
+		</sheet>
+	</element>
+	<element name="Scintillating Breath (Recharge 5–6)" type="Companion Action" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTD_COMPANION_ACTION_YOUNG_CRYSTAL_DRAGON_SCINTILLATING_BREATH">
+		<description>
+			<p>The dragon exhales a burst of brilliant radiance in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 27 (6d8) radiant damage on a failed save, or half as much damage on a successful one. The dragon then gains 10 temporary hit points by absorbing a portion of the radiant energy.</p>
+		</description>
+		<sheet>
+			<description>The dragon exhales a burst of brilliant radiance in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 27 (6d8) radiant damage on a failed save, or half as much damage on a successful one. The dragon then gains 10 temporary hit points by absorbing a portion of the radiant energy.</description>
+		</sheet>
+	</element>
+	<element name="Spellcasting (Psionics)" type="Companion Action" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTD_COMPANION_ACTION_YOUNG_CRYSTAL_DRAGON_SPELLCASTING">
+		<description>
+			<p>The dragon casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 16):
+
+    At will: dancing lights, guidance
+
+    1/day each: hypnotic pattern, lesser restoration</p>
+		</description>
+		<sheet>
+			<description>The dragon casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 16):
+
+    At will: dancing lights, guidance
+
+    1/day each: hypnotic pattern, lesser restoration</description>
+		</sheet>
+	</element>
